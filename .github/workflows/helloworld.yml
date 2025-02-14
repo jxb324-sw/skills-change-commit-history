@@ -1,0 +1,16 @@
+name: Hello World
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  get_current_step:
+    name: Check current step number
+    runs-on: vrm-gh-wsl
+    steps:
+    - uses: actions/checkout@v4
+    - name: HELLO WORLD TYPING
+      shell: bash
+      run: "hello world"
